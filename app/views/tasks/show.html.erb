@@ -1,0 +1,13 @@
+<h1> <%=  @task.title %></h1>
+<%= @task.completed ? "✅" : "☠️" %>
+
+<p><%=  @task.details %></p>
+<%= link_to "edit", edit_task_path(@task)%>
+
+<br>
+
+<br>
+
+<%= link_to "Back to your List", tasks_path%>
+
+
